@@ -163,7 +163,7 @@ class Controller extends AbstractController
      */
     private function exceptionToArray(\Throwable $exception = null): ?array
     {
-        if (null === $exception) {
+        if (!$exception instanceof \Throwable) {
             return null;
         }
 
@@ -228,7 +228,7 @@ class Controller extends AbstractController
      */
     public static function isContentTypeAllowed(Request $request, array $consumes = []): bool
     {
-        if (!empty($consumes) && $consumes[0] !== '*/*') {
+        if ($consumes !== [] && $consumes[0] !== '*/*') {
             $currentFormat = $request->getContentType();
             foreach ($consumes as $mimeType) {
                 // canonize mime type

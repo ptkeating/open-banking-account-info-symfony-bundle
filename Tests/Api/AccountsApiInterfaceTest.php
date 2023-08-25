@@ -56,7 +56,7 @@ class AccountsApiInterfaceTest extends WebTestCase
      */
     public function setUp(): void
     {
-        if (null === self::$client) {
+        if (!self::$client instanceof \Symfony\Bundle\FrameworkBundle\KernelBrowser) {
             self::$client = static::createClient();
         }
     }
