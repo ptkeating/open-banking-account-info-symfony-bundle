@@ -1,0 +1,23 @@
+# OBReadProduct2DataProductInnerOtherProductTypeCreditInterestTierBandSetInnerTierBandInner
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**identification** | **string** | Unique and unambiguous identification of a  Tier Band for the Product. | [optional] 
+**tierValueMinimum** | **string** | Minimum deposit value for which the credit interest tier applies. | 
+**tierValueMaximum** | **string** | Maximum deposit value for which the credit interest tier applies. | [optional] 
+**calculationFrequency** | **string** | How often is credit interest calculated for the account. | [optional] 
+**applicationFrequency** | **string** | How often is interest applied to the Product for this tier/band i.e. how often the financial institution pays accumulated interest to the customer&#39;s account. | 
+**depositInterestAppliedCoverage** | **string** | Amount on which Interest applied. | [optional] 
+**fixedVariableInterestRateType** | [**OpenAPI\Server\Model\OBInterestFixedVariableType1Code**](OBInterestFixedVariableType1Code.md) |  | 
+**aER** | **string** | The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  Read more: Annual Equivalent Rate (AER) http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A | 
+**bankInterestRateType** | **string** | Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the account holder&#39;s account. | [optional] 
+**bankInterestRate** | **string** | Bank Interest for the product | [optional] 
+**notes** | **string** |  | [optional] 
+**otherBankInterestType** | [**OpenAPI\Server\Model\OBReadProduct2DataProductInnerOtherProductTypeCreditInterestTierBandSetInnerTierBandInnerOtherBankInterestType**](OBReadProduct2DataProductInnerOtherProductTypeCreditInterestTierBandSetInnerTierBandInnerOtherBankInterestType.md) |  | [optional] 
+**otherApplicationFrequency** | [**OpenAPI\Server\Model\OBOtherCodeType11**](OBOtherCodeType11.md) |  | [optional] 
+**otherCalculationFrequency** | [**OpenAPI\Server\Model\OBOtherCodeType12**](OBOtherCodeType12.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
