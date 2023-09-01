@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBCreditDebitCode2
  *
@@ -41,26 +42,6 @@ use JMS\Serializer\Annotation\SerializedName;
  * @package OpenAPI\Server\Model
  * @author  OpenAPI Generator team
  */
-class OBCreditDebitCode2
+class OBCreditDebitCode2 extends OBCreditDebitCode0
 {
-    /**
-     * Possible values of this enum
-     */
-    const CREDIT = "Credit";
-    const DEBIT = "Debit";
-    
-    /**
-     * Gets allowable values of the enum
-     * @return string[]
-     */
-    public static function getAllowableEnumValues()
-    {
-        return [
-            self::CREDIT,
-            self::DEBIT,
-        ];
-    }
 }
-
-
-

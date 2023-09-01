@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBCreditDebitCode0
  *
@@ -48,7 +49,7 @@ class OBCreditDebitCode0
      */
     const CREDIT = "Credit";
     const DEBIT = "Debit";
-    
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -61,6 +62,3 @@ class OBCreditDebitCode0
         ];
     }
 }
-
-
-

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBCreditDebitCode1
  *
@@ -29,10 +30,6 @@
 
 namespace OpenAPI\Server\Model;
 
-use Symfony\Component\Validator\Constraints as Assert;
-use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\SerializedName;
-
 /**
  * Class representing the OBCreditDebitCode1 model.
  *
@@ -41,26 +38,6 @@ use JMS\Serializer\Annotation\SerializedName;
  * @package OpenAPI\Server\Model
  * @author  OpenAPI Generator team
  */
-class OBCreditDebitCode1
+class OBCreditDebitCode1 extends OBCreditDebitCode0
 {
-    /**
-     * Possible values of this enum
-     */
-    const CREDIT = "Credit";
-    const DEBIT = "Debit";
-    
-    /**
-     * Gets allowable values of the enum
-     * @return string[]
-     */
-    public static function getAllowableEnumValues()
-    {
-        return [
-            self::CREDIT,
-            self::DEBIT,
-        ];
-    }
 }
-
-
-
