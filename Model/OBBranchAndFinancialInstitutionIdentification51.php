@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBBranchAndFinancialInstitutionIdentification51
  *
@@ -29,10 +30,6 @@
 
 namespace OpenAPI\Server\Model;
 
-use Symfony\Component\Validator\Constraints as Assert;
-use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\SerializedName;
-
 /**
  * Class representing the OBBranchAndFinancialInstitutionIdentification51 model.
  *
@@ -42,93 +39,6 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class OBBranchAndFinancialInstitutionIdentification51 
+class OBBranchAndFinancialInstitutionIdentification51 extends OBBranchAndFinancialInstitutionIdentification50
 {
-        /**
-     * Name of the identification scheme, in a coded form as published in an external list.
-     *
-     * @var string|null
-     * @SerializedName("SchemeName")
-     * @Assert\NotNull()
-     * @Assert\Type("string")
-     * @Type("string")
-     */
-    protected ?string $schemeName = null;
-
-    /**
-     * Unique and unambiguous identification of the servicing institution.
-     *
-     * @var string|null
-     * @SerializedName("Identification")
-     * @Assert\NotNull()
-     * @Assert\Type("string")
-     * @Type("string")
-     * @Assert\Length(
-     *   max = 35
-     * )
-     * @Assert\Length(
-     *   min = 1
-     * )
-     */
-    protected ?string $identification = null;
-
-    /**
-     * Constructor
-     * @param array|null $data Associated array of property values initializing the model
-     */
-    public function __construct(array $data = null)
-    {
-        $this->schemeName = $data['schemeName'] ?? null;
-        $this->identification = $data['identification'] ?? null;
-    }
-
-    /**
-     * Gets schemeName.
-     *
-     * @return string|null
-     */
-    public function getSchemeName(): ?string
-    {
-        return $this->schemeName;
-    }
-
-    /**
-     * Sets schemeName.
-     *
-     * @param string|null $schemeName  Name of the identification scheme, in a coded form as published in an external list.
-     *
-     * @return $this
-     */
-    public function setSchemeName(?string $schemeName): self
-    {
-        $this->schemeName = $schemeName;
-
-        return $this;
-    }
-
-    /**
-     * Gets identification.
-     *
-     * @return string|null
-     */
-    public function getIdentification(): ?string
-    {
-        return $this->identification;
-    }
-
-    /**
-     * Sets identification.
-     *
-     * @param string|null $identification  Unique and unambiguous identification of the servicing institution.
-     *
-     * @return $this
-     */
-    public function setIdentification(?string $identification): self
-    {
-        $this->identification = $identification;
-
-        return $this;
-    }
 }
-
-

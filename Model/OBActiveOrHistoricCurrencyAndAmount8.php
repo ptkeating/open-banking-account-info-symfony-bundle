@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBActiveOrHistoricCurrencyAndAmount8
  *
@@ -29,10 +30,6 @@
 
 namespace OpenAPI\Server\Model;
 
-use Symfony\Component\Validator\Constraints as Assert;
-use JMS\Serializer\Annotation\Type;
-use JMS\Serializer\Annotation\SerializedName;
-
 /**
  * Class representing the OBActiveOrHistoricCurrencyAndAmount8 model.
  *
@@ -42,122 +39,6 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class OBActiveOrHistoricCurrencyAndAmount8 
+class OBActiveOrHistoricCurrencyAndAmount8 extends OBActiveOrHistoricCurrencyAndAmount0
 {
-        /**
-     * A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.
-     *
-     * @var string|null
-     * @SerializedName("Amount")
-     * @Assert\NotNull()
-     * @Assert\Type("string")
-     * @Type("string")
-     * @Assert\Regex("/^\\d{1,13}$|^\\d{1,13}\\.\\d{1,5}$/")
-     */
-    protected ?string $amount = null;
-
-    /**
-     * A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \&quot;Codes for the representation of currencies and funds\&quot;.
-     *
-     * @var string|null
-     * @SerializedName("Currency")
-     * @Assert\NotNull()
-     * @Assert\Type("string")
-     * @Type("string")
-     * @Assert\Regex("/^[A-Z]{3,3}$/")
-     */
-    protected ?string $currency = null;
-
-    /**
-     * @var OBExternalBalanceSubType1Code|null
-     * @SerializedName("SubType")
-     * @Assert\Type("OpenAPI\Server\Model\OBExternalBalanceSubType1Code")
-     * @Type("OpenAPI\Server\Model\OBExternalBalanceSubType1Code")
-     */
-    protected ?OBExternalBalanceSubType1Code $subType = null;
-
-    /**
-     * Constructor
-     * @param array|null $data Associated array of property values initializing the model
-     */
-    public function __construct(array $data = null)
-    {
-        $this->amount = $data['amount'] ?? null;
-        $this->currency = $data['currency'] ?? null;
-        $this->subType = $data['subType'] ?? null;
-    }
-
-    /**
-     * Gets amount.
-     *
-     * @return string|null
-     */
-    public function getAmount(): ?string
-    {
-        return $this->amount;
-    }
-
-    /**
-     * Sets amount.
-     *
-     * @param string|null $amount  A number of monetary units specified in an active currency where the unit of currency is explicit and compliant with ISO 4217.
-     *
-     * @return $this
-     */
-    public function setAmount(?string $amount): self
-    {
-        $this->amount = $amount;
-
-        return $this;
-    }
-
-    /**
-     * Gets currency.
-     *
-     * @return string|null
-     */
-    public function getCurrency(): ?string
-    {
-        return $this->currency;
-    }
-
-    /**
-     * Sets currency.
-     *
-     * @param string|null $currency  A code allocated to a currency by a Maintenance Agency under an international identification scheme, as described in the latest edition of the international standard ISO 4217 \"Codes for the representation of currencies and funds\".
-     *
-     * @return $this
-     */
-    public function setCurrency(?string $currency): self
-    {
-        $this->currency = $currency;
-
-        return $this;
-    }
-
-    /**
-     * Gets subType.
-     *
-     * @return OBExternalBalanceSubType1Code|null
-     */
-    public function getSubType(): ?OBExternalBalanceSubType1Code
-    {
-        return $this->subType;
-    }
-
-    /**
-     * Sets subType.
-     *
-     * @param OBExternalBalanceSubType1Code|null $subType
-     *
-     * @return $this
-     */
-    public function setSubType(?OBExternalBalanceSubType1Code $subType = null): self
-    {
-        $this->subType = $subType;
-
-        return $this;
-    }
 }
-
-

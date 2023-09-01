@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBCashAccount51
  *
@@ -42,18 +43,8 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class OBCashAccount51 
+class OBCashAccount51 extends OBCashAccount50
 {
-        /**
-     * Name of the identification scheme, in a coded form as published in an external list.
-     *
-     * @var string|null
-     * @SerializedName("SchemeName")
-     * @Assert\NotNull()
-     * @Assert\Type("string")
-     * @Type("string")
-     */
-    protected ?string $schemeName = null;
 
     /**
      * Beneficiary account identification.
@@ -72,83 +63,6 @@ class OBCashAccount51
      */
     protected ?string $identification = null;
 
-    /**
-     * The account name is the name or names of the account owner(s) represented at an account level, as displayed by the ASPSP&#39;s online channels. Note, the account name is not the product name or the nickname of the account.
-     *
-     * @var string|null
-     * @SerializedName("Name")
-     * @Assert\Type("string")
-     * @Type("string")
-     * @Assert\Length(
-     *   max = 350
-     * )
-     * @Assert\Length(
-     *   min = 1
-     * )
-     */
-    protected ?string $name = null;
-
-    /**
-     * This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination).
-     *
-     * @var string|null
-     * @SerializedName("SecondaryIdentification")
-     * @Assert\Type("string")
-     * @Type("string")
-     * @Assert\Length(
-     *   max = 34
-     * )
-     * @Assert\Length(
-     *   min = 1
-     * )
-     */
-    protected ?string $secondaryIdentification = null;
-
-    /**
-     * Constructor
-     * @param array|null $data Associated array of property values initializing the model
-     */
-    public function __construct(array $data = null)
-    {
-        $this->schemeName = $data['schemeName'] ?? null;
-        $this->identification = $data['identification'] ?? null;
-        $this->name = $data['name'] ?? null;
-        $this->secondaryIdentification = $data['secondaryIdentification'] ?? null;
-    }
-
-    /**
-     * Gets schemeName.
-     *
-     * @return string|null
-     */
-    public function getSchemeName(): ?string
-    {
-        return $this->schemeName;
-    }
-
-    /**
-     * Sets schemeName.
-     *
-     * @param string|null $schemeName  Name of the identification scheme, in a coded form as published in an external list.
-     *
-     * @return $this
-     */
-    public function setSchemeName(?string $schemeName): self
-    {
-        $this->schemeName = $schemeName;
-
-        return $this;
-    }
-
-    /**
-     * Gets identification.
-     *
-     * @return string|null
-     */
-    public function getIdentification(): ?string
-    {
-        return $this->identification;
-    }
 
     /**
      * Sets identification.
@@ -163,54 +77,4 @@ class OBCashAccount51
 
         return $this;
     }
-
-    /**
-     * Gets name.
-     *
-     * @return string|null
-     */
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
-
-    /**
-     * Sets name.
-     *
-     * @param string|null $name  The account name is the name or names of the account owner(s) represented at an account level, as displayed by the ASPSP's online channels. Note, the account name is not the product name or the nickname of the account.
-     *
-     * @return $this
-     */
-    public function setName(?string $name = null): self
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets secondaryIdentification.
-     *
-     * @return string|null
-     */
-    public function getSecondaryIdentification(): ?string
-    {
-        return $this->secondaryIdentification;
-    }
-
-    /**
-     * Sets secondaryIdentification.
-     *
-     * @param string|null $secondaryIdentification  This is secondary identification of the account, as assigned by the account servicing institution.  This can be used by building societies to additionally identify accounts with a roll number (in addition to a sort code and account number combination).
-     *
-     * @return $this
-     */
-    public function setSecondaryIdentification(?string $secondaryIdentification = null): self
-    {
-        $this->secondaryIdentification = $secondaryIdentification;
-
-        return $this;
-    }
 }
-
-

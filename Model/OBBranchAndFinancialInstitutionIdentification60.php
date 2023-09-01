@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBBranchAndFinancialInstitutionIdentification60
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class OBBranchAndFinancialInstitutionIdentification60 
+class OBBranchAndFinancialInstitutionIdentification60
 {
-        /**
+    /**
      * Name of the identification scheme, in a coded form as published in an external list.
      *
      * @var string|null
@@ -202,5 +203,3 @@ class OBBranchAndFinancialInstitutionIdentification60
         return $this;
     }
 }
-
-

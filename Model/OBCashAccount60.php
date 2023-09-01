@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OBCashAccount60
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class OBCashAccount60 
+class OBCashAccount60
 {
-        /**
+    /**
      * Name of the identification scheme, in a coded form as published in an external list.
      *
      * @var string|null
@@ -210,5 +211,3 @@ class OBCashAccount60
         return $this;
     }
 }
-
-
