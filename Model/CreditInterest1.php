@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreditInterest1
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class CreditInterest1 
+class CreditInterest1 extends CreditInterest
 {
-        /**
+    /**
      * The group of tiers or bands for which credit interest can be applied.
      *
      * @var array|null
@@ -60,39 +61,4 @@ class CreditInterest1
      * )
      */
     protected ?array $tierBandSet = null;
-
-    /**
-     * Constructor
-     * @param array|null $data Associated array of property values initializing the model
-     */
-    public function __construct(array $data = null)
-    {
-        $this->tierBandSet = $data['tierBandSet'] ?? null;
-    }
-
-    /**
-     * Gets tierBandSet.
-     *
-     * @return array|null
-     */
-    public function getTierBandSet(): ?array
-    {
-        return $this->tierBandSet;
-    }
-
-    /**
-     * Sets tierBandSet.
-     *
-     * @param array|null $tierBandSet  The group of tiers or bands for which credit interest can be applied.
-     *
-     * @return $this
-     */
-    public function setTierBandSet(?array $tierBandSet): self
-    {
-        $this->tierBandSet = $tierBandSet;
-
-        return $this;
-    }
 }
-
-

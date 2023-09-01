@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FeeChargeDetailInner
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class FeeChargeDetailInner 
+class FeeChargeDetailInner
 {
-        /**
+    /**
      * Categorisation of fees and charges into standard categories.
      *
      * @var string|null
@@ -614,5 +615,3 @@ class FeeChargeDetailInner
         return $this;
     }
 }
-
-

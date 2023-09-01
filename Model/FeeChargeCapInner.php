@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FeeChargeCapInner
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class FeeChargeCapInner 
+class FeeChargeCapInner
 {
-        /**
+    /**
      * Fee/charge type which is being capped
      *
      * @var array|null
@@ -314,5 +315,3 @@ class FeeChargeCapInner
         return $this;
     }
 }
-
-

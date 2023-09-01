@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreditInterest
  *
@@ -42,9 +43,9 @@ use JMS\Serializer\Annotation\SerializedName;
  * @author  OpenAPI Generator team
  */
 
-class CreditInterest 
+class CreditInterest
 {
-        /**
+    /**
      * The group of tiers or bands for which credit interest can be applied.
      *
      * @var array|null
@@ -94,5 +95,3 @@ class CreditInterest
         return $this;
     }
 }
-
-
