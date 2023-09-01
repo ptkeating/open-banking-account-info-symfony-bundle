@@ -1,3 +1,9 @@
+# Account Info Bundle in Symfony
+
+This is an Account Info Symfony bundle based on the OpenAPI Specification for [OpenBanking - Account Info](https://github.com/OpenBankingUK/read-write-api-specs/tree/master/dist/openapi).
+
+The initial bundle has been generated using the OpenAPI Generator. The current work is to normalise some of the data structures in the bundle and generate appropriate polymorphic classes.
+
 # OpenAPIServer
 Swagger for Account and Transaction API Specification
 
