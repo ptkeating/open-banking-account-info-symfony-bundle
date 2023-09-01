@@ -4,6 +4,8 @@ This is an Account Info Symfony bundle based on the OpenAPI Specification for [O
 
 The initial bundle has been generated using the OpenAPI Generator. The current work is to normalise some of the data structures in the bundle and generate appropriate polymorphic classes.
 
+There follows the auto-generated documentation.
+
 # OpenAPIServer
 Swagger for Account and Transaction API Specification
 
